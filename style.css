@@ -1,0 +1,28 @@
+body {
+  background: #9DBDC6;
+}
+
+#page {
+  background: #DAEAEF;
+}
+
+form {
+
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #FF3D2E;
+  background-color: #272F32;
+  padding: 15px;
+  border-radius: 10px;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+ }
