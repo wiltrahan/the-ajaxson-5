@@ -38,7 +38,7 @@ function fetchAndDisplayGif(event) {
             console.log("we received a response!");
             console.log(response);
 
-            // TODO
+            // TODO ***COMPLETE***
             // 1. set the source attribute of our image to the image_url of the GIF
             // 2. hide the feedback message and display the image
             $('#gif').attr({
@@ -59,15 +59,19 @@ function fetchAndDisplayGif(event) {
         }
     });
 
-    // TODO
+    // TODO ***COMPLETE***
     // give the user a "Loading..." message while they wait
 
-            $("#feedback").text("Loading...");
-            setGifLoadedStatus(false);
 
-            // if (response.data.image_url){
-            //   setGifLoadedStatus(true);
-            // }
+            $(document).ajaxStart(function(){
+              $("#feedback").css("display", "block");
+            });
+
+            $(document).ajaxComplete(function(){
+              $("#feedback").css("display", "none");
+            });
+
+
 
 }
 
