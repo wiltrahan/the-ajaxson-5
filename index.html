@@ -5,13 +5,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
+
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="request-gif.js"></script>
 </head>
 <body>
 
   <div class="container" id="page">
-        <h1>The AJAXson 5</h1>
+        <h1 id="headText">The AJAXson 5</h1>
 
       <form id="form-gif-request"/>
 
@@ -24,16 +25,16 @@
             <p>Prove you are not a robot by answering this riddle:</p>
             <input name="riddle" id="riddle" type="text"/>
             <label><strong>Jacksons are better than 1.</strong></label>
-            <p id="wrong" style="display:none" hidden="true">No Gif For You!</p>
+            <p id="wrong" style="display:none; font-size:40px; color:#222130;" hidden="true">No Gif For You!</p>
         </div>
 
-            <input type="submit" value="Get my Gif!"/>
+            <input type="submit" id="myBtn" value="Get my Gif!"/>
 
       </form>
       <div id="gifSection">
 
         <img id="gif" src="" hidden="true" class="center-block img-responsive"/>
-        <p id="feedback" style="display:none" hidden="true">Loading...</p>
+        <p id="feedback" style="display:none; font-size:40px; text-align:center;" hidden="true">Loading...</p>
       </div>
   </div>
 

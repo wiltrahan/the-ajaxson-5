@@ -1,24 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
 body {
-  background: #9DBDC6;
+  background: #222130;
 }
 
 #page {
-  background: #DAEAEF;
+  background: #D4E8D3;
+  border-radius: 10px;
+  margin-top: 5px;
+  box-shadow: 3px 3px 6px -3px black;
 }
 
 form {
-
   padding: 20px;
   text-align: center;
 }
 
 h1 {
   text-align: center;
-  color: #FF3D2E;
-  background-color: #272F32;
-  padding: 15px;
+  color: #D4E8D3;
+  background-color: #464D57;
+  padding: 25px;
   border-radius: 10px;
+  box-shadow: 3px 3px 6px -3px black;
+  font-family: 'Audiowide', cursive;
+  font-size: 60px;
+
 }
+
 .center-block {
     display: block;
     margin-left: auto;
@@ -26,3 +35,7 @@ h1 {
     margin-bottom: 20px;
     border-radius: 10px;
  }
+#myBtn {
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px -3px black;
+}
